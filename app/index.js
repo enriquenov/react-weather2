@@ -10,10 +10,10 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Enrique!
+        Hello Enrique!
       </div>
     )
   }
 }
 
-ReactDom.render(<App />, document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
