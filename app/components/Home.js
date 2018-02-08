@@ -4,7 +4,12 @@ var SearchBar = require('./SearchBar');
 class Home extends React.Component {
   render() {
     return (
-      <div style={{backgroundImage: "url('app/images/pattern.svg')"}}>
+      <div
+        className="home-container"
+        style={{
+          backgroundImage: "url('app/images/pattern.svg')",
+          height: "800px"}}>
+        <h1 className="header">Enter a City and State</h1>
         <SearchBar />
       </div>
     )
