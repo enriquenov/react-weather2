@@ -4,7 +4,7 @@ var SearchBar = require('./SearchBar');
 class Home extends React.Component {
   render() {
     return (
-      <div>
+      <div style={{backgroundImage: "url('app/images/pattern.svg')"}}>
         <SearchBar />
       </div>
     )

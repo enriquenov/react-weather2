@@ -1,5 +1,4 @@
 var React = require('react');
-import { Button } from 'reactstrap';
 
 class SearchBar extends React.Component {
   render() {
@@ -7,7 +6,7 @@ class SearchBar extends React.Component {
       <div className="search-bar">
         <h1 className="header">Enter a City and State</h1>
         <input className="search" placeholder="St. George, Utah" />
-        <Button color="success">Get Weather</Button>
+        <button className="btn btn-success">Get Weather</button>
       </div>
     )
   }
