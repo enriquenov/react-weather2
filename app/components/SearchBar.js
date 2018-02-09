@@ -2,15 +2,44 @@ var React = require('react');
 var PropTypes = require('prop-types');
 
 class SearchBar extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      zipcode: ''
+    };
+    this.handleSubmitCity = this.handleSubmitCity.bind(this);
+    this.handleUpdateCity = this.handleUpdateCity.bind(this);
+  }
+
+  handleUpdateCity(event) {
+    var city = event.target.value;
+    this.setState(function(){
+      return {
+        zipcode: city
+      }
+    })
+  }
+
+  handleSubmitCity() {
+
+  }
+
   render() {
     return (
       <div
         className="search-bar"
         style={{flexDirection: this.props.direction}}>
-        <input className="search" placeholder="St. George, Utah" />
+        <input
+          type="text"
+          autoComplete="off"
+          className="search"
+          onChange={this.handleUpdateCity}
+          placeholder="St. George, Utah"
+          value= {this.state.zipcode} />
         <button
           type="button"
-          className="btn btn-success">
+          className="btn btn-success"
+          onClick={this.handleSubmitCity}>
             Get Weather
         </button>
       </div>
