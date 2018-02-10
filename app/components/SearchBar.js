@@ -21,7 +21,13 @@ class SearchBar extends React.Component {
   }
 
   handleSubmitCity() {
+    this.props.onSubmitCity(this.state.city)
 
+    this.setState(function(){
+      return {
+        zipcode: ''
+      };
+    })
   }
 
   render() {
