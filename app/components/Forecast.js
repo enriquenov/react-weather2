@@ -4,7 +4,7 @@ class Forecast extends React.Component {
   render() {
     return (
       <div>
-        Forecast Component
+        Forecast Component!
       </div>
     )
   }
