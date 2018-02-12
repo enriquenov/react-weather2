@@ -14,9 +14,10 @@ class App extends React.Component {
           <Route>
             <Nav />
           </Route>
-          <Route>
+          <Route exact path="/">
             <Home />
           </Route>
+          <Route path="/forecast" component={Forecast}/>
         </div>
       </BrowserRouter>
     )
