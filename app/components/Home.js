@@ -1,5 +1,6 @@
 var React = require('react');
 var SearchBar = require('./SearchBar');
+var PropTypes = require('prop-types');
 
 function Home(props) {
   return (
