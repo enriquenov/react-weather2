@@ -27,10 +27,9 @@ body {
 }
 
 .header {
-  color: #fff;
+  color: green;
   font-size: 40px;
   font-weight: 100;
-  /*width: 300px;*/
   margin: 0 auto;
   padding: 35vh 0 20px;
 }
